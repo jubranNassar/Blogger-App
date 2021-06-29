@@ -76,7 +76,7 @@ The Blogger-App will allow you to create and upload posts and save them for late
 - Save posts to a Saved Posts page
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
+
 
 - Add more styling
 - add additional features such as: date and time components for when the post was uploaded
