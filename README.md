@@ -83,7 +83,6 @@ The Blogger-App will allow you to create and upload posts and save them for late
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
 
 |  Day | Deliverable | Status
 |---|---| ---|
