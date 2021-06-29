@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import axios from  "axios";
+import { useState, useEffect } from "react";
+import { baseURL, config } from "./services";
+import { Route } from "react-router-dom";
+import Navbar from "./components/NavBar";
+import Form from "./components/Form"; 
 import './App.css';
 
 function App() {
+  const [posts, setPosts] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(true);
+
+  useEffect(()=> {
+    const fetchPosts = async () => {
+      const resp = await axios.get(baseURL, config);
+      setPosts(resp.data.records);
+    }
+    fetchPosts();
+  }, [toggleFetch])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Route exact path="/">
+        <main>
+          {posts.map((post)=> (
+            <div className="post">
+              {/* <h4>{post.createdTime = new Date().toTimeString.substring()}</h4> */}
+              <h1>{post.fields.name}</h1>
+              <h2>{post.fields.post}</h2>
+              <button>Save</button>
+            </div>
+          ))}
+        </main>
+      </Route>
+      <Route path="/new">
+        <Form setToggleFetch={setToggleFetch}/>
+      </Route>
     </div>
   );
 }
