@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
+import "../Navbar.css"
 function Navbar() {
   return (
-    <div>
-      <header>
-        <img src="http://parksadventure.com/wp-content/uploads/2017/10/header-image-1-2.png" alt="headerImage" />
+    <div class="header">
+        <h1 className="title">Blogger</h1>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/new">New Post</Link>
-          {/* <Link to="/saved">Saved Posts</Link> */}
-        </nav>
-      </header>
+          <Link id="home" to="/">Home</Link>
+          <Link id="new" to="/new">New Post</Link>
+          <Link to="/saved">Saved Posts</Link>
+        </nav>  
     </div>
   )
 }
