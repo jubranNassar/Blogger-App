@@ -1,11 +1,15 @@
 function Save(props) {
-  const savedPost = props.posts.filter((post)=> post.saved === true)
-  console.log(savedPost)
+
+
+
 
   return (
     <div>
-      {savedPost.map((post)=> (
-        <h1 className="name">{post.fields.name}</h1>
+      {props.saved.map((post)=> (
+        <div key={post.id}>
+          <h2>{post.fields.name}</h2>
+          <p>{post.fields.post}</p>
+        </div>
       ))}
     </div>
 

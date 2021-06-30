@@ -17,7 +17,7 @@ function Form(props) {
       post,
       saved,
     };
-    await axios.post(baseURL, { fields: newPost }, config);
+    await axios.post(`${baseURL}/posts`, { fields: newPost }, config);
 
     setTimeout(() => {
       history.push("/")
