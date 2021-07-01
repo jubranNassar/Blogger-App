@@ -7,7 +7,7 @@ function Navbar() {
         <nav>
           <Link id="home" to="/">Home</Link>
           <Link id="new" to="/new">New Post</Link>
-          <Link to="/saved">Saved Posts</Link>
+          <Link id="saved" to="/saved">Saved Posts</Link>
         </nav>  
     </div>
   )

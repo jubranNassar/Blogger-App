@@ -19,16 +19,3 @@ body {
   border-radius: 2px;
   border: .25px lightgrey solid;
 }
-
-
-#comments {
-  list-style: none;
-}
-.save {
-  font-size: 18px;
-  border: white;
-  border-radius: 2px;
-  cursor: pointer;
-
-}
-

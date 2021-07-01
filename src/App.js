@@ -46,8 +46,9 @@ function App() {
       <Navbar />
       <Route exact path="/">
         <main>
+          <h1>WELCOME TO BLOGGER!</h1>
           {posts.map((post)=> (
-            <Post key={post.id} post={post} setSaved={setSaved} />
+            <Post key={post.id} post={post} setSaved={setSaved} comments={comments} setToggleFetch={setToggleFetch}/>
           ))}
         </main>
       </Route>

@@ -28,9 +28,8 @@ nav {
   font-weight: bold;
   border: solid whtie 1px;
   border-radius: 1px;
-  float: left;
-  margin: 15px;
-  margin-left: 20px;
+  position: absolute;
+  margin: 15px auto;
 }
 
 #new {
@@ -42,4 +41,16 @@ nav {
   float: right;
   margin: 15px;
   margin-right: 20px;
+}
+
+
+#saved {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: solid whtie 1px;
+  border-radius: 1px;
+  float: left;
+  margin: 15px;
+  margin-left: 20px;
 }

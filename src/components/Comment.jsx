@@ -1,12 +1,12 @@
-
+import "../Comment.css";
 const Comment = (props) => {
   const comment = props.comment.fields;
-  console.log(props.comment.fields)
+  console.log(comment)
   if (!comment) {
     return <div>Loading...</div>
   } else {
     return (
-      <li>{comment.text} - {comment.name}</li>
+      <li>{comment.name} -<br/> {comment.text}</li>
     );
   }
 };

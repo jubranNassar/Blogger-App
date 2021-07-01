@@ -5,9 +5,10 @@ function Save(props) {
 
   return (
     <div>
+      <h1>Saved Posts: </h1>
       {props.saved.map((post)=> (
-        <div key={post.id}>
-          <h2>{post.fields.name}</h2>
+        <div className="post" key={post.id}>
+          <h1 className="name" >{post.fields.name}</h1>
           <p>{post.fields.post}</p>
         </div>
       ))}

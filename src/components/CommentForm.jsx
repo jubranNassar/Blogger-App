@@ -1,42 +1,45 @@
-
 import { useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
+import "../CommentForm.css";
 
 const CommentForm = (props) => {
-  const [comment, setComment] = useState("");
+  const [text, setText] = useState("");
   const [name, setName] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newComment = {
-      comment,
+      text,
       name,
       posts: [props.post.id],
-    }
+    };
     await axios.post(`${baseURL}/comments`, { fields: newComment }, config);
     props.setToggleFetch((toggleFetch) => !toggleFetch);
-  }
+  };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="content">Content: </label>
+    <form id="comment-form" onSubmit={handleSubmit}>
       <input
-        id="content"
-        type="text"
-        required
-        value={comment}
-        onChange={(e) => setComment(e.target.value)}
-      />
-      <label htmlFor="author">Author: </label>
-      <input
+        className="inputs"
         id="author"
         type="text"
+        placeholder="Name"
         required
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-      <button type="submit">Comment</button>
+
+      <input
+        className="inputs"
+        id="content"
+        type="text"
+        placeholder="Write comment here..."
+        required
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
+      <button id="submit-button" type="submit">Comment</button>
     </form>
   );
 };
