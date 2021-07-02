@@ -15,7 +15,7 @@ function Form(props) {
     const newPost = {
       name,
       post,
-      saved,
+      saved, 
     };
     await axios.post(`${baseURL}/posts`, { fields: newPost }, config);
 

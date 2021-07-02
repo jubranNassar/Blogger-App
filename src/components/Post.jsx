@@ -3,6 +3,11 @@ import CommentForm from "./CommentForm";
 import "../CSS/App.css";
 function Post(props) {
   const { post, setSaved } = props;
+  
+  // const convert = (time) => {
+  //   return 
+  // }
+
 
   const handleClick = (e) => {
     setSaved((saved) => {
@@ -17,13 +22,13 @@ function Post(props) {
   };
   return (
     <div className="post">
-      {/* <h4>{post.createdTime = new Date().toTimeString.substring()}</h4> */}
+      {/* <h4 key={post.id}>{new Date(post.fields.Created).toISOString().substring(11, 19)}</h4> */}
       <h1 className="name">{post.fields.name}</h1>
       <p className="post-text">{post.fields.post}</p>
       <CommentForm post={props.post} setToggleFetch={props.setToggleFetch} />
       <ul id="comments">
         {post.fields.comments?.map((comment) => (
-          <Comment key={post.id}comment={comment} />
+          <Comment key={comment} comment={comment} />
         ))}
       </ul>
       <button className="save" name={post.id} onClick={handleClick}>
