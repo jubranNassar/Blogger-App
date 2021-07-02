@@ -6,7 +6,7 @@ import Navbar from "./components/NavBar";
 import Form from "./components/Form"; 
 import Save from "./components/Save";
 import Post from "./components/Post";
-import './App.css';
+import './CSS/App.css';
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -46,7 +46,7 @@ function App() {
       <Navbar />
       <Route exact path="/">
         <main>
-          <h1>WELCOME TO BLOGGER!</h1>
+          <h1 id="welcome" >WELCOME TO BLOGGER!</h1>
           {posts.map((post)=> (
             <Post key={post.id} post={post} setSaved={setSaved} comments={comments} setToggleFetch={setToggleFetch}/>
           ))}

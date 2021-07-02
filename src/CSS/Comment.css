@@ -9,3 +9,12 @@ li {
   padding: 10px;
   padding-left: 20px;
 }
+
+
+@media only screen and (max-width: 768px ) {
+  li {
+    margin-left: -35px;
+    width: 255px;
+    height: auto;
+  }
+}

@@ -32,3 +32,19 @@ body {
 
 }
 
+@media only screen and (max-width: 768px ) {
+  .post {
+    margin: 20px;
+    height: auto;
+  }
+  #welcome {
+    margin-top: 50px;
+  }
+
+  #post-text {
+    font-size: 10px;
+  }
+  .name {
+    margin-top: -10px;
+  }
+}

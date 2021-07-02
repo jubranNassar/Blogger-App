@@ -1,7 +1,6 @@
-import "../Comment.css";
+import "../CSS/Comment.css";
 const Comment = (props) => {
   const comment = props.comment.fields;
-  console.log(comment)
   if (!comment) {
     return <div>Loading...</div>
   } else {

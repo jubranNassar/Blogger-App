@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
-import "../CommentForm.css";
+import "../CSS/CommentForm.css";
 
 const CommentForm = (props) => {
   const [text, setText] = useState("");
@@ -29,7 +29,7 @@ const CommentForm = (props) => {
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-
+      <div className="content-and-button">
       <input
         className="inputs"
         id="content"
@@ -40,6 +40,7 @@ const CommentForm = (props) => {
         onChange={(e) => setText(e.target.value)}
       />
       <button id="submit-button" type="submit">Comment</button>
+      </div>
     </form>
   );
 };

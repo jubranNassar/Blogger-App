@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
-import "../Form.css"
+import "../CSS/Form.css"
 
 function Form(props) {
   const [name, setName] = useState("");

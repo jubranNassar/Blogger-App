@@ -1,6 +1,6 @@
 import Comment from "./Comment";
 import CommentForm from "./CommentForm";
-import "../App.css";
+import "../CSS/App.css";
 function Post(props) {
   const { post, setSaved } = props;
 
@@ -19,7 +19,7 @@ function Post(props) {
     <div className="post">
       {/* <h4>{post.createdTime = new Date().toTimeString.substring()}</h4> */}
       <h1 className="name">{post.fields.name}</h1>
-      <p>{post.fields.post}</p>
+      <p className="post-text">{post.fields.post}</p>
       <CommentForm post={props.post} setToggleFetch={props.setToggleFetch} />
       <ul id="comments">
         {post.fields.comments?.map((comment) => (
