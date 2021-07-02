@@ -5,7 +5,7 @@ const Comment = (props) => {
     return <div>Loading...</div>
   } else {
     return (
-      <li>{comment.name} -<br/> {comment.text}</li>
+      <li >{comment.name} -<br/> {comment.text}</li>
     );
   }
 };

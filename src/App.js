@@ -20,7 +20,7 @@ function App() {
       setPosts(resp.data.records);
       const commentsResp = await axios.get(`${baseURL}/comments`, config);
       // take the comments out of commentsResp and save them as comments
-      // setComments(commentsResp.data.records);
+      setComments(commentsResp.data.records);
 
       const comments = commentsResp.data.records;
       // take the posts out of postsResp and immediately map through them...

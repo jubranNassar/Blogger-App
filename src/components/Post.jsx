@@ -23,7 +23,7 @@ function Post(props) {
       <CommentForm post={props.post} setToggleFetch={props.setToggleFetch} />
       <ul id="comments">
         {post.fields.comments?.map((comment) => (
-          <Comment key={comment.id} comment={comment} />
+          <Comment key={post.id}comment={comment} />
         ))}
       </ul>
       <button className="save" name={post.id} onClick={handleClick}>
