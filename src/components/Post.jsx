@@ -1,14 +1,25 @@
 import Comment from "./Comment";
-import CommentForm from "./CommentForm";
+import CommentForm from "./CommentForm"; 
 import "../CSS/App.css";
+import Like from "./Like";
 function Post(props) {
   const { post, setSaved } = props;
+
+  // const time = new Date(post.fields.Created).toISOString().substring(11, 16)
+  // const newTime = time.splice(2,2)
+  // console.log(newTime)
   
-  // const convert = (time) => {
-  //   return 
-  // }
+      // const getFormattedTime = (time)=> {
+      //   const hours24 = parseInt(time.substring(0,2));
+      //   const hours = ((hours24 + 11) % 12) + 1;
+      //   const amPm = hours24 > 11 ? 'pm' : 'am';
+      //   const minutes = time.substring(3);
+        
+      //   return hours + ':' + minutes + amPm;
+      // };
 
-
+      // getFormattedTime(time);
+    
   const handleClick = (e) => {
     setSaved((saved) => {
       // if this posts id is in the saved array then return the saved array without this posts id
@@ -22,7 +33,6 @@ function Post(props) {
   };
   return (
     <div className="post">
-      {/* <h4 key={post.id}>{new Date(post.fields.Created).toISOString().substring(11, 19)}</h4> */}
       <h1 className="name">{post.fields.name}</h1>
       <p className="post-text">{post.fields.post}</p>
       <CommentForm post={props.post} setToggleFetch={props.setToggleFetch} />
@@ -34,6 +44,7 @@ function Post(props) {
       <button className="save" name={post.id} onClick={handleClick}>
         Save Post
       </button>
+      <Like />
     </div>
   );
 }
