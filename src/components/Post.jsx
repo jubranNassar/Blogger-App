@@ -8,11 +8,9 @@ function Post(props) {
   const time = new Date(post.fields.Created).toLocaleString()    
       const handleClick = (e) => {
         setSaved((saved) => {
-          // if this posts id is in the saved array then return the saved array without this posts id
           if (saved.includes(post.id)) {
             return saved.filter((savedPost) => savedPost.id !== post.id);
           } else {
-            // otherwise return all previous saved posts and this post
             return [...saved, post];
           }
         });
