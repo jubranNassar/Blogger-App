@@ -16,12 +16,10 @@ function Like() {
 
 
   return (
-    <div>
-      <div className= "like">
-      <button id="like-button" value={like} onClick={likeButton} >{(like) ? "liked": "like" }</button>
-      <p>{counter}</p>
-      </div>
-    </div>
+  <div className= "like">
+    <button id="like-button" value={like} onClick={likeButton} >{(like) ? "liked": "like" }</button>
+    <p>{counter}</p>
+  </div>
   )
 }
 

@@ -32,7 +32,9 @@ body {
   width: 100px;
   cursor: pointer;
   float: left;
+  background-color: #EFEFEF;
   margin-right: 5px;
+  margin-left: 105px;
 
 }
 
@@ -42,10 +44,11 @@ body {
   height: 16px;
   justify-content:space-between;
   align-items: center;
-  width: 68px;
+  width: 70px;
   background-color: #EFEFEF;
   padding: 10px;
   cursor: pointer;
+  
   
 }
 
@@ -71,5 +74,14 @@ body {
   }
   .name {
     margin-top: -10px;
+  }
+
+  .save {
+    width: 100px;
+    margin-left: 10px;
+  }
+
+  .like {
+    margin-top: 10px;
   }
 }
