@@ -20,7 +20,6 @@ body {
   border: .25px lightgrey solid;
 }
 
-
 #comments {
   list-style: none;
 }
@@ -50,6 +49,17 @@ body {
   cursor: pointer;
   
   
+}
+
+#name-and-time {
+  position: relative;
+}
+
+#time {
+  float: right;
+  width: 100px;
+  font-size: 15px;
+  color: #615e5e;
 }
 
 #like-button {
@@ -83,5 +93,9 @@ body {
 
   .like {
     margin-top: 10px;
+  }
+
+  #time {
+    top: -1px;
   }
 }
