@@ -86,27 +86,29 @@ The Blogger-App will allow you to create and upload posts and save them for late
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1 | Lay down boiler plate and Work on GET and POST requests| Incomplete
-|Day 2 | Work on Comment component| Incomplete
-|Day 3 | Work on save Component and Saved Posts page | Incomplete
-|Day 4 | complete MVP and begin styling | Incomplete
-|Day 5 | review and debugging, cleaning up code | Incomplete
+|Day 1 | Lay down boiler plate and Work on GET and POST requests| Complete
+|Day 2 | Work on Comment component| Complete
+|Day 3 | Work on save Component and Saved Posts page | Complete
+|Day 4 | complete MVP and begin styling | Complete
+|Day 5 | review and debugging, cleaning up code | Complete
 |Day 6 | Work on post MVP | Incomplete
-|Day 7 | Final touches and styling and debugging | Incomplete
+|Day 7 | Final touches and styling and debugging | Complete
 
 ## Timeframes
 
 
 | Component | Priority | Estimated Time | Time Invested |
 | --- | :---: |  :---: | :---: |
-| useState&useEffect | H |  3hrs | hrs |
-| GET requests | H | 3hrs| hrs |
-| POST requests| H | 3hrs| hrs |
-| Rendering data | H | 3hrs | hrs |
-| basic CSS layout | H | 3hrs | hrs |
-| media quaries | H | 3hrs | hrs |
-| detailed styling | H | 3hrs | hrs |
-| Total | H | 27hrs| hrs |
+| useState&useEffect | H |  3hrs | 1hrs |
+| GET requests | H | 3hrs| 20mins |
+| POST requests| H | 3hrs| 40mins |
+| Save Component | H | 3hrs | 5hrs |
+| Comment Component | H | 3hrs | 1hr |
+| Rendering data | H | 3hrs | 1hrs |
+| basic CSS layout | H | 3hrs | 2hrs |
+| media quaries | H | 3hrs | 3hrs |
+| detailed styling | H | 3hrs | 4hrs |
+| Total | H | 33hrs| 18hrs |
 
 ## SWOT Analysis
 
