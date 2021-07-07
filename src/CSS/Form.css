@@ -38,6 +38,11 @@ label {
   max-width: 60px;
 }
 
+#submit:hover {
+  background-color: darkgray;
+  transition: .5s;
+}
+
 .hidden {
   display: none;
 }

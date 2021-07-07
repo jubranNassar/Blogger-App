@@ -32,6 +32,11 @@ nav {
   margin: 15px auto;
 }
 
+#home:hover {
+  color: goldenrod;
+  transition: .5s;
+}
+
 #new {
   color: white;
   text-decoration: none;
@@ -42,6 +47,12 @@ nav {
   margin: 15px;
   margin-right: 20px;
 }
+
+#new:hover {
+  color: goldenrod;
+  transition: .5s;
+}
+
 
 
 #saved {
@@ -54,6 +65,12 @@ nav {
   margin: 15px;
   margin-left: 20px;
 }
+
+#saved:hover {
+  color: goldenrod;
+  transition: .5s;
+}
+
 
 @media only screen and (max-width: 768px ) {
   .header {

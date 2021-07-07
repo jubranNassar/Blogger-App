@@ -33,6 +33,11 @@
   cursor: pointer;
 }
 
+#submit-button:hover {
+  background-color: darkgrey;
+  transition: .5s;
+}
+
 @media only screen and (max-width: 768px) {
   #comment-form {
     display: flex;
