@@ -23,9 +23,8 @@ function App() {
       setComments(commentsResp.data.records);
 
       const comments = commentsResp.data.records;
-      // take the posts out of postsResp and immediately map through them...
+      
       const linkedPosts = resp.data.records.map((post) => {
-        // ...inside the map function replace the comments array full of comment ids (if it exists at all) with the comments respective to those ids
         return {
           ...post,
           fields: {
